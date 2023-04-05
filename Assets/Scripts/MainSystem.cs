@@ -29,7 +29,7 @@ public class MainSystem : MonoBehaviour
     void Update()
     {
         
-        if((Input.GetMouseButtonDown(1) || (Application.platform == RuntimePlatform.Android && Input.GetTouch(0).phase == TouchPhase.Began)) && !isCollected)
+        if((Input.GetMouseButtonDown(0) || (Application.platform == RuntimePlatform.Android && Input.GetTouch(0).phase == TouchPhase.Began)) && !isCollected)
         {
             ShapeController[] _shapes = FindObjectsOfType<ShapeController>();
             foreach(ShapeController _shape in _shapes)
@@ -44,7 +44,7 @@ public class MainSystem : MonoBehaviour
                 }
             } 
         }
-        else if((Input.GetMouseButtonDown(1) || (Application.platform == RuntimePlatform.Android && Input.GetTouch(0).phase == TouchPhase.Began)) && isCollected)
+        else if((Input.GetMouseButtonDown(0) || (Application.platform == RuntimePlatform.Android && Input.GetTouch(0).phase == TouchPhase.Began)) && isCollected)
         {
             Vector3 _input = Application.platform == RuntimePlatform.Android ? Input.GetTouch(0).position : Input.mousePosition;
             selectedShape.transform.position = _input;
