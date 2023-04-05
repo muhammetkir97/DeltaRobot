@@ -10,3 +10,4 @@ You can use this application fo testing sorter robots.
 
 You can change the speed, click the button on the bottom right and move the slider.
 
+![ss](ss.PNG?raw=true "Screenshot")
