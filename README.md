@@ -3,6 +3,7 @@ Delta Robot Test App
 
 
 You can use this application fo testing sorter robots. 
+Android: [Download](DeltaRobotTest.apk)
 
 1)Touch or click to shape for selecting
 
